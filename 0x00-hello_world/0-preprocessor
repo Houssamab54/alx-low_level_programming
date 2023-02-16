@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -E example.c -o output.c
+gcc -E $CFILE -o c
