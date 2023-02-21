@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 
-/**                                                                                                                                                                            
- * main - Entry point                                                                                                                                                          
- *                                                                                                                                                                             
- * Description: This function prints "_putchar" followed by a new line.                                                                                                        
- *                                                                                                                                                                             
- * Return: Always 0 (Success)                                                                                                                                                  
+/**
+ * times_table - Makes the sum of two numbers
+ *
+ * Return: The sum of the two parameters
  */
-
 void times_table(void)
 {
 int i, j, k;
