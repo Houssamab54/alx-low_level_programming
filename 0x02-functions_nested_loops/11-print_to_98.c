@@ -8,7 +8,7 @@
  */
 void print_to_98(int n)
 {
-int i, j;
+int j;
 if (n < 98)
 {
 for (j = n ; j <= 98; j++)
