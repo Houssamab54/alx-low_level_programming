@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include "main.h"
 
-/**                                                                                                                                                                            
- * main - Entry point                                                                                                                                                          
- *                                                                                                                                                                             
- * Description: This function prints "_putchar" followed by a new line.                                                                                                        
- *                                                                                                                                                                             
- * Return: Always 0 (Success)                                                                                                                                                  
+/**
+ * print_last_digit - Makes the sum of two numbers
+ * @n: First operand
+ *
+ * Return: The sum of the two parameters
  */
-
 int print_last_digit(int n)
 {
 int last_digit = n % 10;
