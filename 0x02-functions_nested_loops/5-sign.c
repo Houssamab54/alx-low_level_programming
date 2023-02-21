@@ -1,14 +1,11 @@
 #include <stdio.h>
 #include "main.h"
-
-/**                                                                                                                                                                            
- * main - Entry point                                                                                                                                                          
- *                                                                                                                                                                             
- * Description: This function prints "_putchar" followed by a new line.                                                                                                        
- *                                                                                                                                                                             
- * Return: Always 0 (Success)                                                                                                                                                  
+/**
+ * print_sign - Makes the sum of two numbers
+ * @n: First operand
+ *
+ * Return: The sum of the two parameters
  */
-
 int print_sign(int n)
 {
 if (n > 0)
