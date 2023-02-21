@@ -1,14 +1,10 @@
 #include <stdio.h>
 #include "main.h"
 
-/**                                                                                                                                                                            
- * main - Entry point                                                                                                                                                          
- *                                                                                                                                                                             
- * Description: This function prints "_putchar" followed by a new line.                                                                                                        
- *                                                                                                                                                                             
- * Return: Always 0 (Success)                                                                                                                                                  
+/**
+ * jack_bauer - Makes the sum of two numbers
+ * Return: The sum of the two parameters
  */
-
 void jack_bauer(void)
 {
 int hour, minute;
