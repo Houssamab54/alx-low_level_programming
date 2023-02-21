@@ -16,22 +16,23 @@ for (j = 0; j < 10; j++)
 k = i * j;
 if(k < 9)
 {
-putchar('0'+k);
+_putchar('0'+k);
+_putchar(' ');
 }
 else
 {
-putchar('0' + k / 10);
-putchar('0' + k % 10);
+_putchar('0' + k / 10);
+_putchar('0' + k % 10);
 }
 if (j != 9)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 }
 else 
 {
-putchar('$');
-putchar('\n');
+_putchar('$');
+_putchar('\n');
 }
 }
 }
