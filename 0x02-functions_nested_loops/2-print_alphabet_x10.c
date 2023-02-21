@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+void print_alphabet_x10(void)
 {
 int i, j;
 for (j = 'a' ; j < 10; j++)
@@ -20,5 +20,4 @@ _putchar(i);
 _putchar('\n');
 }
 }
-return (0);
 }
