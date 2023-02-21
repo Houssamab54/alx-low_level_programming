@@ -33,7 +33,7 @@ _putchar(i / 100 + '0');
 _putchar(i % 100 / 10 + '0');
 _putchar(i % 10 + '0');
 }
-if (i < 98 && j > 0)
+if (i < 98 && j != 98)
 {
 _putchar(',');
 _putchar(' ');
