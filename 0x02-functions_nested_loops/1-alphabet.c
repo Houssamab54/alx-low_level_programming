@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * int_alphabet - Entry point
+ * print_alphabet- Entry point
  *
  * Description: This function prints "_putchar" followed by a new line.
  *
