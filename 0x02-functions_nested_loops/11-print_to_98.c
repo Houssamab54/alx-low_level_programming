@@ -44,7 +44,6 @@ i = j;
 }
 _putchar('\n');
 }
-}
 else
 {
 for (i = n; i >= 98; i--)
@@ -67,4 +66,5 @@ _putchar(' ');
 }
 }
 _putchar('\n');
+}
 }
