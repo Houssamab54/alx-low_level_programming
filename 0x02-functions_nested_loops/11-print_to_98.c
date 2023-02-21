@@ -15,7 +15,7 @@ for (i = n; i <= 98; i++)
 j = i;
 if (i < 0)
 {
-putchar('-');
+_putchar('-');
 i *= -1;
 }
 if (i < 10)
