@@ -23,7 +23,7 @@ else
 _putchar('0' + k / 10);
 _putchar('0' + k % 10);
 }
-k = i * j;
+k = i * (j + 1);
 if (j != 9)
 {
 _putchar(',');
