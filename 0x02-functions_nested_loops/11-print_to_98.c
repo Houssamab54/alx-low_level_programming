@@ -39,7 +39,6 @@ for (j = n ; j >= 98; j--)
 {
 _putchar(j / 10 + '0');
 _putchar(j % 10 + '0');
-}
 if (j != 98)
 {
 _putchar(',');
