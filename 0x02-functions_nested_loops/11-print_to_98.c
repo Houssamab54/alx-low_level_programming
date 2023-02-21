@@ -13,7 +13,15 @@ if (n < 98)
 {
 for (j = n ; j <= 98; j++)
 {
-_putchar('0' + j);
+if (j < 10 || j < 0 && j > -10 )
+{
+_putchar(i + '0');
+}
+else
+{
+putchar(i / 10 + '0');
+putchar(i % 10 + '0');
+}
 if (j != 98)
 {
 _putchar(',');
@@ -29,7 +37,15 @@ if (n > 98)
 {
 for (j = n ; j >= 98; j--)
 {
-_putchar('0' + j);
+if (j < 10 )
+{
+_putchar(i + '0');
+}
+else
+{
+putchar(i / 10 + '0');
+putchar(i % 10 + '0');
+}
 if (j != 98)
 {
 _putchar(',');
