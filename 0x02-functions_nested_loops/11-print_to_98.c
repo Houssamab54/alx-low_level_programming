@@ -8,14 +8,23 @@
  */
 void print_to_98(int n)
 {
-int j;
+int j, i;
 if (n < 98)
 {
 for (j = n ; j <= 98; j++)
 {
-if (j < 10 ||(j < 0 && j > -10))
+if (j < 10)
+{
+if (j < 0)
+{
+i = - j;
+_putchar('-');
+_putchar(i + '0')
+}
+else
 {
 _putchar(j + '0');
+}
 }
 else
 {
@@ -52,7 +61,8 @@ _putchar('\n');
 }
 if (n == 98)
 {
-_putchar('0' + j);
+_putchar(j / 10 + '0');
+_putchar(j % 10 + '0');
 _putchar('\n');
 }
 }
