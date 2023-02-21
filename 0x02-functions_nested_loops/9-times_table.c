@@ -17,7 +17,6 @@ k = i * j;
 if (k < 10)
 {
 _putchar('0' + k);
-_putchar(' ');
 }
 else
 {
@@ -27,6 +26,10 @@ _putchar('0' + k % 10);
 if (j != 9)
 {
 _putchar(',');
+if (k < 10)
+{
+_putchar(' ');
+}
 _putchar(' ');
 }
 else
