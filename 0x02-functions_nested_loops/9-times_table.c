@@ -9,14 +9,33 @@
  * Return: Always 0 (Success)                                                                                                                                                  
  */
 
-int _isalpha(int c)
+void times_table(void)
 {
-if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+int i, j, k;
+for (i = 0; i < 10; i++)
 {
-return (1);
+for (j = 0; j < 10; j++)
+{
+k = i * j;
+if(k < 9)
+{
+putchar('0'+k);
 }
 else
 {
-return (0);
+putchar('0' + k / 10);
+putchar('0' + k % 10);
+}
+if (j != 9)
+{
+putchar(',');
+putchar(' ');
+}
+else 
+{
+putchar('$');
+putchar('\n');
+}
+}
 }
 }

@@ -9,14 +9,13 @@
  * Return: Always 0 (Success)                                                                                                                                                  
  */
 
-int _isalpha(int c)
+int print_last_digit(int n)
 {
-if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+int last_digit = n % 10;
+if (last_digit < 0)
 {
-return (1);
+last_digit = -last_digit;
 }
-else
-{
-return (0);
-}
+_putchar(last_digit + '0');
+return last_digit;
 }
