@@ -19,7 +19,7 @@ if (j < 0)
 {
 i = - j;
 _putchar('-');
-_putchar(i + '0')
+_putchar(i + '0');
 }
 else
 {
