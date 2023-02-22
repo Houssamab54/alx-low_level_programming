@@ -12,7 +12,25 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-    if ((year % 4 == 0 || year % 400 == 0) && !(year % 100 == 0))
+  int is_leap;
+  if (year % 4 == 0) {
+    if (year % 100 == 0) {
+        if (year % 400 == 0) {
+            // Leap year: divisible by 4, 100, and 400
+            is_leap = 1;
+        } else {
+            // Not a leap year: divisible by 4 and 100, but not 400
+            is_leap = 0;
+        }
+    } else {
+        // Leap year: divisible by 4, but not 100
+        is_leap = 1;
+    }
+} else {
+    // Not a leap year: not divisible by 4
+    is_leap = 0;
+}
+  if ( is_leap == 1)
     {
         if (month >= 2 && day >= 60)
         {
