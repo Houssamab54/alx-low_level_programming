@@ -64,7 +64,7 @@ int convert_day(int month, int day)
 
 void print_remaining_days(int month, int day, int year)
 {
-  int is_leap;
+int is_leap;
 if (year % 4 == 0) {
     if (year % 100 == 0) {
         if (year % 400 == 0) {
