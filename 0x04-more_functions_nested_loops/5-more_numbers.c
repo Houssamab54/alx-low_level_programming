@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
  * more_numbers - Prints the numbers from 0 to 14 (inclusive) ten times,
  *                followed by a new line.
