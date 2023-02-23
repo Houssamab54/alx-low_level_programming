@@ -1,69 +1,83 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include "main.h"
+/**
+ * print_number - prints an integer
+ * @n: The integer to print
+ */
+void print_number(int n)
+{
+	unsigned int num;
 
-#include <stdio.h>
-
-#endif /* MAIN_H */
+	if (n < 0)
+	{
+		_putchar('-');
+		num = -n;
+	}
+	else
+	{
+		num = n;
+	}
+	if (num / 10)
+	{
+		print_number(num / 10);
+	}
+	_putchar((num % 10) + '0');
+}
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * fizzbuzz - prints Fizz, Buzz, or FizzBuzz
+ * @i: The number to check
  */
-int main(void)
+void fizzbuzz(int i)
 {
-        int i;
+	if (i % 3 == 0 && i % 5 == 0)
+	{
+		_putchar('F');
+		_putchar('i');
+		_putchar('z');
+		_putchar('z');
+		_putchar('B');
+		_putchar('u');
+		_putchar('z');
+		_putchar('z');
+	}
+	else if (i % 3 == 0)
+	{
+		_putchar('F');
+		_putchar('i');
+		_putchar('z');
+		_putchar('z');
+	}
+	else if (i % 5 == 0)
+	{
+		_putchar('B');
+		_putchar('u');
+		_putchar('z');
+		_putchar('z');
+	}
+	else
+	{
+		print_number(i);
+	}
+}
 
-        for (i = 1; i <= 100; i++)
-        {
-                if (i % 3 == 0 && i % 5 == 0)
-                {
-                        _putchar('F');
-                        _putchar('i');
-                        _putchar('z');
-                        _putchar('z');
-                        _putchar('B');
-                        _putchar('u');
-                        _putchar('z');
-                        _putchar('z');
-                        _putchar(' ');
-                }
-                else if (i % 3 == 0)
-                {
-                        _putchar('F');
-                        _putchar('i');
-                        _putchar('z');
-                        _putchar('z');
-                        _putchar(' ');
-                }
-                else if (i % 5 == 0)
-                {
-                        _putchar('B');
-                        _putchar('u');
-                        _putchar('z');
-                        _putchar('z');
-                        _putchar(' ');
-                }
-                else
-                {
-                        int j = i;
-                        int digit;
+/**
+ * print_fizzbuzz - prints numbers 1 to 100, replacing multiples of 3 with Fizz,
+ * multiples of 5 with Buzz, and multiples of both with FizzBuzz
+ */
+void print_fizzbuzz(void)
+{
+	int i;
 
-                        if (j < 0)
-                        {
-                                _putchar('-');
-                                j = -j;
-                        }
-                        digit = j / 10;
-                        if (digit != 0)
-                        {
-                                _putchar('0' + digit);
-                        }
-                        _putchar('0' + j % 10);
-                        _putchar(' ');
-                }
-        }
-        _putchar('\n');
-
-        return (0);
+	for (i = 1; i <= 100; i++)
+	{
+		fizzbuzz(i);
+		if (i != 100)
+		{
+			_putchar(' ');
+		}
+		else
+		{
+			_putchar('\n');
+		}
+	}
 }
