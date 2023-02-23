@@ -61,7 +61,7 @@ void fizzbuzz(int i)
 }
 
 /**
- * print_fizzbuzz - prints numbers 1 to 100, replacing multiples of 3 with Fizz,
+ * print_fizzbuzz - prints numbers 1 to 100, replaples of 3 with Fizz,
  * multiples of 5 with Buzz, and multiples of both with FizzBuzz
  */
 void print_fizzbuzz(void)
