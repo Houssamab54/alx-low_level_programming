@@ -94,4 +94,6 @@ void print_number(int n);
 
 void reset_to_98(int *n);
 
+int _atoi(char *s);
+
 #endif /* main_H */
