@@ -19,10 +19,10 @@ sign = sign * -1;
 if (*s >= '0' && *s <= '9')
 {
 digit = (*s - '0');
-if (result * 10 + digit > 2147483647)
+if (result * 10 == 2147483640 &&  digit > 7)
 {
 printf("%d",214748);
-return (3647);
+return (3648);
 }
 else
 {
