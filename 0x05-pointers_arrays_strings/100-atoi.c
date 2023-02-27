@@ -21,7 +21,7 @@ if (*s >= '0' && *s <= '9')
 digit = (*s - '0');
 if (result * 10 == 2147483640 &&  digit > 7)
 {
-printf("%d",214748);
+printf("%d", 214748 * sign);
 return (3648);
 }
 else
