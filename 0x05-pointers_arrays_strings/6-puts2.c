@@ -17,8 +17,10 @@ _putchar(*(str + i));
 i += 2;
 }
 _putchar('\n');
-if (*str != NULL)
+i = 0;
+while (*(str + i) != '\0')
 {
-free(*str);
+*(str + i) = '\0';
+i += 1;
 }
 }
