@@ -17,8 +17,8 @@ _putchar(*(str + i));
 i += 2;
 }
 _putchar('\n');
-if (str != NULL)
+if (*str != NULL)
 {
-free(str);
+free(*str);
 }
 }
