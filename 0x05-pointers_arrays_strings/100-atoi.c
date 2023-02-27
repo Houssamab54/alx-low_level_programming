@@ -21,8 +21,8 @@ if (*s >= '0' && *s <= '9')
 digit = (*s - '0');
 if (result * 10 + digit > 2147483647)
 {
-result=2147483648;
-return (result);
+printf("%d",214748);
+return (3647);
 }
 else
 {
