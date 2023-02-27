@@ -14,6 +14,8 @@
 
 int _putchar(char c);
 
+void swap_int(int *a, int *b);
+
 void print_alphabet(void);
 
 void print_alphabet_x10(void);
