@@ -12,7 +12,7 @@ char *leet(char *str)
 	char *ptr = str;
 	char letters[] = "aAeEoOtTlL";
 	char numbers[] = "4433007711";
-	int i, j;
+	int i;
 
 	while (*ptr)
 	{
