@@ -43,10 +43,7 @@ int check_palindrome(char *s, int start, int end)
 
 int _strlen(char *s)
 {
-	int len = 0;
-
-	while (*s++)
-		len++;
-
-	return (len);
+	if (*s == '\0')
+		return (0);
+	return (1 + _strlen(s + 1));
 }
