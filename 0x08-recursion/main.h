@@ -32,7 +32,7 @@ int calculate_sqrt(int n, int start, int end);
 
 void set_string(char **s, char *to);
 
-int is_prime(int n);
+int is_prime(int n, int i);
 
 char *_memset(char *s, char b, unsigned int n);
 
