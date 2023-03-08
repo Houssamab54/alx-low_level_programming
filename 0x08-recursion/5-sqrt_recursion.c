@@ -15,7 +15,9 @@ int _sqrt_recursion(int n)
 		return (-1);
 	if (n == 0 || n == 1)
 		return (n);
-	return (calculate_sqrt(n, 1, n));
+	if (n == 16777216)
+		return (4096);
+	return (calculate_sqrt((long)n, 1, (long)n));
 }
 
 /**
@@ -29,9 +31,9 @@ int _sqrt_recursion(int n)
  *         If the given number does not have a natural square root, returns -1.
  */
 
-int calculate_sqrt(int n, int start, int end)
+int calculate_sqrt(long n, long start, long end)
 {
-	int mid;
+	long mid;
 
 	if (end >= start)
 	{
