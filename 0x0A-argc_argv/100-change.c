@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+int count_coins(int cents);
+
 /**
- * main - Entry point
+ * main - entry point
+ * @argc: argument count
+ * @argv: argument vector
  *
- * @argc: Argument count
- * @argv: Argument vector
- *
- * Return: Always 0 (Success)
+ * Return: 0 on success, 1 on error
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-    int cents, coins = 0;
+    int cents, coins;
 
     if (argc != 2)
     {
@@ -20,6 +21,22 @@ int main(int argc, char **argv)
     }
 
     cents = atoi(argv[1]);
+
+    coins = count_coins(cents);
+
+    printf("%d\n", coins);
+    return (0);
+}
+
+/**
+ * count_coins - count the minimum number of coins required to make change
+ * @cents: the amount of change in cents
+ *
+ * Return: the minimum number of coins required
+ */
+int count_coins(int cents)
+{
+    int coins = 0;
 
     if (cents < 0)
     {
@@ -32,32 +49,26 @@ int main(int argc, char **argv)
         coins++;
         cents -= 25;
     }
-
     while (cents >= 10)
     {
         coins++;
         cents -= 10;
     }
-
     while (cents >= 5)
     {
         coins++;
         cents -= 5;
     }
-
     while (cents >= 2)
     {
         coins++;
         cents -= 2;
     }
-
     while (cents >= 1)
     {
         coins++;
-        cents -= 1;
+        cents--;
     }
 
-    printf("%d\n", coins);
-
-    return (0);
+    return coins;
 }
