@@ -63,5 +63,5 @@ while (cents >= 1)
 coins++;
 cents--;
 }
-return coins;
+return (coins);
 }
