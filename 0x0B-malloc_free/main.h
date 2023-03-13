@@ -26,6 +26,8 @@ char *create_array(unsigned int size, char c);
 
 int wildcmp(char *s1, char *s2);
 
+char *_strdup(char *str);
+
 int factorial(int n);
 
 int _pow_recursion(int x, int y);
