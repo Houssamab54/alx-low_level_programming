@@ -30,6 +30,8 @@ int _strlen(char *s);
 
 int _strlen_recursion(char *s);
 
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 char *create_array(unsigned int size, char c);
 
 char *str_concat(char *s1, char *s2);
