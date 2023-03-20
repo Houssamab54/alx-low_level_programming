@@ -1,18 +1,23 @@
 #include <stdio.h>
-#include "dog.h"
+#include <stdlib.h>
+#include "main.h"
 
 /**
- * main - check the code
+ * main - Priompiled from, followed by a new line
  *
- * Return: Always 0.
+ * Return: Always 0
  */
 int main(void)
 {
-    struct dog my_dog;
+    int i = 0;
+    char filename[] = __FILE__;
 
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-    print_dog(&my_dog);
+    while (filename[i] != '\0')
+    {
+        putchar(filename[i]);
+        i++;
+    }
+
+    putchar('\n');
     return (0);
 }
