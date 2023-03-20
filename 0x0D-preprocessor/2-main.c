@@ -9,15 +9,13 @@
  */
 int main(void)
 {
-    int i = 0;
-    char filename[] = __FILE__;
-
-    while (filename[i] != '\0')
-    {
-        putchar(filename[i]);
-        i++;
-    }
-
-    putchar('\n');
-    return (0);
+int i = 0;
+char filename[] = __FILE__;
+while (filename[i] != '\0')
+{
+putchar(filename[i]);
+i++;
+}
+putchar('\n');
+return (0);
 }
