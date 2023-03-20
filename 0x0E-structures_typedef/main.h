@@ -2,6 +2,7 @@
 #define main_H
 
 #include <unistd.h>
+#include "dog.h"
 
 /**
  * _putchar - writes the character c to stdout
