@@ -3,6 +3,35 @@
 #include "main.h"
 #include "dog.h"
 
+/**                                                                                                                                                  
+ * _strdup - returns a pointer to a newly allocated space in memory,                                                                                 
+ * which contains a copy of the string given as a parameter.                                                                                         
+ * @str: string to be duplicated                                                                                                                     
+ *                                                                                                                                                   
+ * Return: pointer to the du insufficient memory was available                                                                                       
+ */
+char *_strdup(char *str)
+{
+        char *duplicate;
+        int length = 0, i;
+
+        if (str == NULL)
+                return (NULL);
+
+        while (str[length])
+                length++;
+
+        duplicate = malloc(sizeof(char) * (length + 1));
+
+        if (duplicate == NULL)
+                return (NULL);
+
+        for (i = 0; i <= length; i++)
+                duplicate[i] = str[i];
+
+        return (duplicate);
+}
+
 /**
  * new_dog - creates a new dog
  * @name: name of the dog
