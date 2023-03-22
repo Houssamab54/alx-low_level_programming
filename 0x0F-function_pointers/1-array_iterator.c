@@ -16,7 +16,7 @@ if (action != NULL && size != 0 && array != NULL)
 {
 for (i = 0; i < (int) size; i++)
 {
-(*action)(*(array+i));
+(*action)(*(array + i));
 }
 }
 }
