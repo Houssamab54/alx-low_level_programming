@@ -24,4 +24,5 @@ int op_mod(int a, int b);
 
 int (*get_op_func(char *s))(int, int);
 
-#endif /* _3_CALC_H_ */
+void print_digits(int n);
+ /* _3_CALC_H_ */
