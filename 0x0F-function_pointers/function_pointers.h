@@ -21,6 +21,8 @@ void _print_rev_recursion(char *s);
 
 void print_name(char *name, void (*f)(char *));
 
+void array_iterator(int *array, size_t size, void (*action)(int));
+
 void *malloc_checked(unsigned int b);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n);
