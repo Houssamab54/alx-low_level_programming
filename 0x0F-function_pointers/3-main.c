@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 
     result = op_func(a, b);
 
-    print_number(result);
+    print_digits(result);
     _putchar('\n');
     return (0);
 }
