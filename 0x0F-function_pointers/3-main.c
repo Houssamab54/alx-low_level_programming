@@ -58,7 +58,8 @@ int main(int argc, char *argv[])
         return (100);
     }
 
-    result = op_func(a, b);
-    _putchar(result/10);
-      return (0);
+result = op_func(a, b);
+ _putchar(result);
+ _putchar('\n');
+return (0);
 }
