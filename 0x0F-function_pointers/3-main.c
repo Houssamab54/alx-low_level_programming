@@ -1,18 +1,42 @@
+#include <stdlib.h>
 #include <stdio.h>
-#include "dog.h"
+#include "3-calc.h"
 
 /**
- * main - check the code
+ * main - Entry point. Calculates arithmetic operations
+ * @argc: The number of arguments
+ * @argv: The array of arguments
  *
- * Return: Always 0.
+ * Return: 0 if successful, 98, 99, or 100 if there was an error
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-    dog_t my_dog;
+    int num1, num2, result;
+    int (*op_func)(int, int);
 
-    my_dog.name = "Poppy";
-    my_dog.age = 3.5;
-    my_dog.owner = "Bob";
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+    if (argc != 4)
+    {
+        printf("Error\n");
+        return (98);
+    }
+
+    num1 = atoi(argv[1]);
+    num2 = atoi(argv[3]);
+    op_func = get_op_func(argv[2]);
+
+    if (op_func == NULL || argv[2][1] != '\0')
+    {
+        printf("Error\n");
+        return (99);
+    }
+
+    if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
+    {
+        printf("Error\n");
+        return (100);
+    }
+
+    result = op_func(num1, num2);
+    printf("%d\n", result);
     return (0);
 }
