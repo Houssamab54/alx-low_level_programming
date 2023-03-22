@@ -59,8 +59,6 @@ int main(int argc, char *argv[])
     }
 
 result = op_func(a, b);
- _putchar(result);
- _putchar('\n');
- printf("rrr");
+ printf("%d\n",result);
 return (0);
 }
