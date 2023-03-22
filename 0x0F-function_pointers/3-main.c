@@ -59,6 +59,6 @@ int main(int argc, char *argv[])
     }
 
     result = op_func(a, b);
-printf("%d\n", result);
+    _putchar(result/10);
       return (0);
 }
