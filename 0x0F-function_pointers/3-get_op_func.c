@@ -28,29 +28,3 @@ i++;
 }
 return (NULL);
 }
-
-/**
- * print_digits - Prints out the digits of an integer using putchar
- *
- * @n: The integer to print the digits of
- */
-
-void print_digits(int n)
-{
-    int digits[10];
-    int i = 0;
-
-    if (n < 0) {
-        _putchar('-');
-        n = -n;
-    }
-
-do {
-        digits[i++] = n % 10;
-        n /= 10;
-    } while (n > 0);
-
-   while (--i >= 0) {
-        _putchar(digits[i] + '0');
-    }
-}
