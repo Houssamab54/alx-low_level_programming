@@ -22,6 +22,12 @@ void _print_rev_recursion(char *s);
 
 void *malloc_checked(unsigned int b);
 
+void print_numbers(const char *separator, const unsigned int n, ...);
+
+void print_strings(const char *separator, const unsigned int n, ...);
+
+void print_all(const char * const format, ...);
+
 int sum_them_all(const unsigned int n, ...);
 
 char *string_nconcat(char *s1, char *s2, unsigned int n);
