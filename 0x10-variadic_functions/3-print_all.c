@@ -13,10 +13,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char c;
 	char *s;
-	int n, i;
-	float f;
+	int i;
 
 	va_start(args, format);
 	while (format && format[i])
