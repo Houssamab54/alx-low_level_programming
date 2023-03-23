@@ -18,7 +18,6 @@ void print_all(const char * const format, ...)
 	unsigned int i = 0;
 	char c;
 	char *s;
-	void *p;
 	int n;
 	float f;
 	va_start(args, format);
