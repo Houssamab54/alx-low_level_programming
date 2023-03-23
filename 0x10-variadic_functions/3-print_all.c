@@ -16,6 +16,9 @@
  */
 void print_all(const char * const format, ...)
 {
+va_list args;
+va_start(args, format);
 printf("(nil)");
 printf("\n");
+va_end(args);
 }
