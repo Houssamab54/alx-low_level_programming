@@ -19,6 +19,18 @@ void _puts_recursion(char *s);
 
 size_t print_list(const list_t *h);
 
+unsigned int binary_to_uint(const char *b);
+
+void print_binary(unsigned long int n);
+
+int set_bit(unsigned long int *n, unsigned int index);
+
+int get_bit(unsigned long int n, unsigned int index);
+
+int clear_bit(unsigned long int *n, unsigned int index);
+
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+
 size_t list_len(const list_t *h);
 
 list_t *add_node(list_t **head, const char *str);
